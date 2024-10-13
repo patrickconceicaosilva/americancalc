@@ -27,6 +27,6 @@ function calculate() {
 
 calculate();
 
-document.querySelectorAll('#inputs input[type="number"], #inputs input[name="entrega"]').forEach(input => {
+document.querySelectorAll('#inputs input[type="radio"]').forEach(input => {
     input.addEventListener("change", calculate);
 });
