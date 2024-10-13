@@ -9,6 +9,7 @@ const prices = {
 }
 
 const valorTotal = document.getElementById("valortotal");
+let calcbutton = document.getElementById("calcbutton");
 
 function calculate() {
     let total = 0;
@@ -25,10 +26,4 @@ function calculate() {
 
 }
 
-document.querySelectorAll('#inputs input[type="number"]').forEach(input => {
-    input.addEventListener("input", calculate);
-});
-
-document.querySelectorAll('#inputs input[type="radio"]').forEach(input => {
-    input.addEventListener("change", calculate);
-});
+calcbutton.addEventListener("click", calculate);

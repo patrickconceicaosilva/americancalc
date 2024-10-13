@@ -53,6 +53,18 @@ input[type=number] {
     text-align: center;
 }
 
+#calcbutton {
+    padding: 11px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#calcbutton:hover {
+    transform: scale(1.06);
+}
+
 footer {
     position: fixed;
     bottom: 0;
