@@ -25,7 +25,9 @@ function calculate() {
 
 }
 
-calculate();
+document.querySelectorAll('#inputs input[type="number"]').forEach(input => {
+    input.addEventListener("input", calculate);
+});
 
 document.querySelectorAll('#inputs input[type="radio"]').forEach(input => {
     input.addEventListener("change", calculate);
