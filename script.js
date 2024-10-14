@@ -10,6 +10,7 @@ const prices = {
 
 const valorTotal = document.getElementById("valortotal");
 let calcbutton = document.getElementById("calcbutton");
+let clearbutton = document.getElementById("clearbutton");
 
 function calculate() {
     let total = 0;
@@ -27,3 +28,7 @@ function calculate() {
 }
 
 calcbutton.addEventListener("click", calculate);
+
+clearbutton.addEventListener("click", () => {
+    window.location.reload(true)
+});
