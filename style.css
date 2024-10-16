@@ -53,6 +53,10 @@ input[type=number] {
     text-align: center;
 }
 
+button {
+    cursor: pointer;
+}
+
 #calcbutton {
     padding: 11px;
     font-size: 17px;
